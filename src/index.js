@@ -13,13 +13,13 @@ Queue.prototype.add = function (data) {
 
     if (!this.handler) throw Error("Mocking version requires handler to be set before first add()");
 
-    this.handler(job);
+    this.handler(job, function () {});
 }
 
 Queue.prototype.createJob = function (data) {
     return {
         'data': data
-    }
+    };
 }
 
 module.exports = Queue;

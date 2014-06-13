@@ -2,7 +2,7 @@
   "name": "bull-mock",
   "description": "Bull.js mock interface, useful for testing",
   "main": "src/",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "git@github.com:solatis/bull-mock.git",
 
   "dependencies": {

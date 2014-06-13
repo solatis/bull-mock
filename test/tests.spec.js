@@ -27,12 +27,13 @@ describe('When adding an item without a handler', function () {
 
 describe('When adding an item with a handler', function () {
 
-    it('Should be processed', function (done) {
+    it('Should be processed', function (testDone) {
         var queue = new Bull('myQueue');
 
-        queue.process(function (job) {
+        queue.process(function (job, jobDone) {
             chai.expect(job.data).to.equal('test');
-            done();
+            jobDone();
+            testDone();
         });
 
         queue.add('test');
