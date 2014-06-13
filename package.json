@@ -1,0 +1,23 @@
+{
+  "name": "bull-mock",
+  "description": "Bull.js mock interface, useful for testing",
+  "main": "src/",
+  "version": "0.0.1",
+  "repository": "git@github.com:solatis/bull-mock.git",
+
+  "dependencies": {
+    "queue-async":    "latest"
+  },
+
+  "devDependencies": {
+    "mocha":          "latest",
+    "chai":           "latest",
+    "chai-interface": "latest",
+
+    "should":         "latest"
+  },
+
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  }
+}
